@@ -1,9 +1,9 @@
 /* VARIABLES */
 :root {
-  --pink: #fc60a7;
-  --light-blue: #00f3ff;
-  --yellow: #fbff21;
-  --white: #ffffff;
+  --pink: #fb3f81;
+  --blue: #a2ebfd;
+  --green: #24e00b;
+  --white: #4f4f4f;
 }
 
 /*  RESET
@@ -213,6 +213,7 @@ table {
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
+  animation-duration: 1s; 
 }
 
 @-webkit-keyframes bounceIn {
@@ -329,7 +330,7 @@ table {
 }
 
 body {
-  background-color: var(--pink);
+  background-color: var(--blue);
 }
 
 .container {
@@ -339,37 +340,41 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  border: 2px double white;
 }
 
 h1 {
-  font-family: "Bangers", cursive;
+  font-family: 'Pangolin', cursive;
   font-size: 200%;
+  font-weight: bold;
   margin-bottom: 20px;
-  color: var(--light-blue);
+  padding-top: 20px;
+  /*margin-top: 20px;*/
+  color: var(--pink);
 }
 
 button,
 .roulette {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Caveat', cursive;
 }
 
 .roulette {
   height: 26px;
-  color: var(--yellow);
+  color: var(--green);
 }
 
 button {
   background-color: transparent;
   padding: 15px;
   margin-top: 40px;
-  border: 4px solid var(--yellow);
-  color: var(--yellow);
+  border: 4px solid var(--green);
+  color: var(--green);
 }
 
 button:hover,
 button:focus,
 button:active {
-  background-color: var(--yellow);
+  background-color: var(--green);
   color: var(--pink);
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
@@ -379,10 +384,11 @@ button:active {
 }
 
 footer {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Pangolin', cursive;
   font-size: 12px;
   color: var(--white);
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 .link-to {
   text-decoration: none;
